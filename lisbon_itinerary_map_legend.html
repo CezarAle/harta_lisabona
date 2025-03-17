@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_604ceb7ca5885fead10dba524d2c6741 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+<div style="position: fixed; bottom: 50px; left: 50px; background-color: white;
+            z-index:9999; padding: 10px; border: 2px solid gray; font-size: 14px;">
+    <b>Legendă Zile:</b><br>
+    <span style="color: blue;">⬤</span> Ziua 1 - Sosire & Explorare Baixa<br>
+    <span style="color: green;">⬤</span> Ziua 2 - Belem & Râul Tejo<br>
+    <span style="color: red;">⬤</span> Ziua 3 - Sintra & Cabo da Roca<br>
+    <span style="color: purple;">⬤</span> Ziua 4 - Oceanariul & Plecare<br>
+    <span style="color: orange;">⬤</span> Hotel Mundial - Cazare
+</div>
+    
+            <div class="folium-map" id="map_604ceb7ca5885fead10dba524d2c6741" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_604ceb7ca5885fead10dba524d2c6741 = L.map(
+                "map_604ceb7ca5885fead10dba524d2c6741",
+                {
+                    center: [38.7169, -9.1399],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_05e3c92943df3ed69f60b5a0de546003 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var marker_751634246af495e84e22dcce94353d87 = L.marker(
+                [38.7147, -9.1357],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_6e26013f2c7fce07000cffdcb49248f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_751634246af495e84e22dcce94353d87.setIcon(icon_6e26013f2c7fce07000cffdcb49248f9);
+        
+    
+        var popup_5e4e730f174c6688cb1c00d4980dc667 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_627224360608ba3ed0cf914b1ed34c59 = $(`<div id="html_627224360608ba3ed0cf914b1ed34c59" style="width: 100.0%; height: 100.0%;">Ziua 1 - Hotel Mundial</div>`)[0];
+            popup_5e4e730f174c6688cb1c00d4980dc667.setContent(html_627224360608ba3ed0cf914b1ed34c59);
+        
+
+        marker_751634246af495e84e22dcce94353d87.bindPopup(popup_5e4e730f174c6688cb1c00d4980dc667)
+        ;
+
+        
+    
+    
+            marker_751634246af495e84e22dcce94353d87.bindTooltip(
+                `<div>
+                     Ziua 1 - Hotel Mundial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9df346c1f3b3a3611910d8fd252558d5 = L.marker(
+                [38.7077, -9.1366],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_d6b2d343f2cc52665e2a41b28ead7d76 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9df346c1f3b3a3611910d8fd252558d5.setIcon(icon_d6b2d343f2cc52665e2a41b28ead7d76);
+        
+    
+        var popup_a9c74f9714dce4c3a85b1f1f3d225330 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_906950d3ab23b4449969ef36c83669e5 = $(`<div id="html_906950d3ab23b4449969ef36c83669e5" style="width: 100.0%; height: 100.0%;">Ziua 1 - Praça do Comércio</div>`)[0];
+            popup_a9c74f9714dce4c3a85b1f1f3d225330.setContent(html_906950d3ab23b4449969ef36c83669e5);
+        
+
+        marker_9df346c1f3b3a3611910d8fd252558d5.bindPopup(popup_a9c74f9714dce4c3a85b1f1f3d225330)
+        ;
+
+        
+    
+    
+            marker_9df346c1f3b3a3611910d8fd252558d5.bindTooltip(
+                `<div>
+                     Ziua 1 - Praça do Comércio
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e6b1d40d88dffd3b6b8c650bfd4855a0 = L.marker(
+                [38.7106, -9.1443],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_7fda524727b6f5577d345dea4c844dd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e6b1d40d88dffd3b6b8c650bfd4855a0.setIcon(icon_7fda524727b6f5577d345dea4c844dd4);
+        
+    
+        var popup_ea84d6e679dd2a98cf00922acec5eb95 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c9350df2d51623333e04e8e5d32e22c8 = $(`<div id="html_c9350df2d51623333e04e8e5d32e22c8" style="width: 100.0%; height: 100.0%;">Ziua 1 - Manteigaria (Pastel de Nata)</div>`)[0];
+            popup_ea84d6e679dd2a98cf00922acec5eb95.setContent(html_c9350df2d51623333e04e8e5d32e22c8);
+        
+
+        marker_e6b1d40d88dffd3b6b8c650bfd4855a0.bindPopup(popup_ea84d6e679dd2a98cf00922acec5eb95)
+        ;
+
+        
+    
+    
+            marker_e6b1d40d88dffd3b6b8c650bfd4855a0.bindTooltip(
+                `<div>
+                     Ziua 1 - Manteigaria (Pastel de Nata)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a908ee72d78b24c2878648115944d2ee = L.marker(
+                [38.7152, -9.1408],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_b914ec20366623ab51806dca153092fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a908ee72d78b24c2878648115944d2ee.setIcon(icon_b914ec20366623ab51806dca153092fe);
+        
+    
+        var popup_d3b9bc4be6b779da4844d35e73b834c8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ec895a6840464ded5e2b756458acf88 = $(`<div id="html_9ec895a6840464ded5e2b756458acf88" style="width: 100.0%; height: 100.0%;">Ziua 1 - Solar 31 da Calçada (Cină)</div>`)[0];
+            popup_d3b9bc4be6b779da4844d35e73b834c8.setContent(html_9ec895a6840464ded5e2b756458acf88);
+        
+
+        marker_a908ee72d78b24c2878648115944d2ee.bindPopup(popup_d3b9bc4be6b779da4844d35e73b834c8)
+        ;
+
+        
+    
+    
+            marker_a908ee72d78b24c2878648115944d2ee.bindTooltip(
+                `<div>
+                     Ziua 1 - Solar 31 da Calçada (Cină)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40147fdcf3f0d5dd178a41172118a9e1 = L.marker(
+                [38.6978, -9.2065],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_70404fc4b26a0d661de267fd6bdb2318 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_40147fdcf3f0d5dd178a41172118a9e1.setIcon(icon_70404fc4b26a0d661de267fd6bdb2318);
+        
+    
+        var popup_50337f3052e1be08bbf5686973b63839 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_33eefd031bc485f6155f9ce1449ee987 = $(`<div id="html_33eefd031bc485f6155f9ce1449ee987" style="width: 100.0%; height: 100.0%;">Ziua 2 - Mănăstirea Jerónimos</div>`)[0];
+            popup_50337f3052e1be08bbf5686973b63839.setContent(html_33eefd031bc485f6155f9ce1449ee987);
+        
+
+        marker_40147fdcf3f0d5dd178a41172118a9e1.bindPopup(popup_50337f3052e1be08bbf5686973b63839)
+        ;
+
+        
+    
+    
+            marker_40147fdcf3f0d5dd178a41172118a9e1.bindTooltip(
+                `<div>
+                     Ziua 2 - Mănăstirea Jerónimos
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e6ae3ec24571d52df1fd135a7c27dc0 = L.marker(
+                [38.6916, -9.2158],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_fc767771ec1c3b32a9a8648e0dc8fe1c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_3e6ae3ec24571d52df1fd135a7c27dc0.setIcon(icon_fc767771ec1c3b32a9a8648e0dc8fe1c);
+        
+    
+        var popup_2ea61e5c921733e7b29e41ea30633d39 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_954da5f06129c8f07289b7180ff980ba = $(`<div id="html_954da5f06129c8f07289b7180ff980ba" style="width: 100.0%; height: 100.0%;">Ziua 2 - Turnul Belém</div>`)[0];
+            popup_2ea61e5c921733e7b29e41ea30633d39.setContent(html_954da5f06129c8f07289b7180ff980ba);
+        
+
+        marker_3e6ae3ec24571d52df1fd135a7c27dc0.bindPopup(popup_2ea61e5c921733e7b29e41ea30633d39)
+        ;
+
+        
+    
+    
+            marker_3e6ae3ec24571d52df1fd135a7c27dc0.bindTooltip(
+                `<div>
+                     Ziua 2 - Turnul Belém
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ca873b6a316ccff270d25235bf41a15f = L.marker(
+                [38.6975, -9.2051],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_701d604e2f84e6e2082e892012019250 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_ca873b6a316ccff270d25235bf41a15f.setIcon(icon_701d604e2f84e6e2082e892012019250);
+        
+    
+        var popup_f1dbfd48559abe192527909db4c5f5df = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d54e7a023a6daba70988734cb7b4dda6 = $(`<div id="html_d54e7a023a6daba70988734cb7b4dda6" style="width: 100.0%; height: 100.0%;">Ziua 2 - Pastéis de Belém</div>`)[0];
+            popup_f1dbfd48559abe192527909db4c5f5df.setContent(html_d54e7a023a6daba70988734cb7b4dda6);
+        
+
+        marker_ca873b6a316ccff270d25235bf41a15f.bindPopup(popup_f1dbfd48559abe192527909db4c5f5df)
+        ;
+
+        
+    
+    
+            marker_ca873b6a316ccff270d25235bf41a15f.bindTooltip(
+                `<div>
+                     Ziua 2 - Pastéis de Belém
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c410b9daa3617d0c710c307f1d9c2f30 = L.marker(
+                [38.6972, -9.2072],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_a5876e53734ddbda2b28d80aff66630e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c410b9daa3617d0c710c307f1d9c2f30.setIcon(icon_a5876e53734ddbda2b28d80aff66630e);
+        
+    
+        var popup_251c84597c024579153c78adbc3e3d42 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_806755cb6393e37612754473b0820d5f = $(`<div id="html_806755cb6393e37612754473b0820d5f" style="width: 100.0%; height: 100.0%;">Ziua 2 - Muzeul Maritim</div>`)[0];
+            popup_251c84597c024579153c78adbc3e3d42.setContent(html_806755cb6393e37612754473b0820d5f);
+        
+
+        marker_c410b9daa3617d0c710c307f1d9c2f30.bindPopup(popup_251c84597c024579153c78adbc3e3d42)
+        ;
+
+        
+    
+    
+            marker_c410b9daa3617d0c710c307f1d9c2f30.bindTooltip(
+                `<div>
+                     Ziua 2 - Muzeul Maritim
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4eb50f35cde5f71a6b54db05dd16f842 = L.marker(
+                [38.7, -9.18],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_9f5a3caf1cb8ec033db262282556fd69 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4eb50f35cde5f71a6b54db05dd16f842.setIcon(icon_9f5a3caf1cb8ec033db262282556fd69);
+        
+    
+        var popup_4b274d43127fddd1b56f4ce9fe2e0de9 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8dcfdc5a1642cd257fc0f40d9a05c4f4 = $(`<div id="html_8dcfdc5a1642cd257fc0f40d9a05c4f4" style="width: 100.0%; height: 100.0%;">Ziua 2 - Plimbare cu barca pe Tejo</div>`)[0];
+            popup_4b274d43127fddd1b56f4ce9fe2e0de9.setContent(html_8dcfdc5a1642cd257fc0f40d9a05c4f4);
+        
+
+        marker_4eb50f35cde5f71a6b54db05dd16f842.bindPopup(popup_4b274d43127fddd1b56f4ce9fe2e0de9)
+        ;
+
+        
+    
+    
+            marker_4eb50f35cde5f71a6b54db05dd16f842.bindTooltip(
+                `<div>
+                     Ziua 2 - Plimbare cu barca pe Tejo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_881a23f18345957a679d92d954185678 = L.marker(
+                [38.7036, -9.1655],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_3986311af7ce148c69f7fe395712992a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_881a23f18345957a679d92d954185678.setIcon(icon_3986311af7ce148c69f7fe395712992a);
+        
+    
+        var popup_11edec6ba797f5eede8cd1879a6ff73f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9c4435a9d4979ca9adeb44aabc42adb4 = $(`<div id="html_9c4435a9d4979ca9adeb44aabc42adb4" style="width: 100.0%; height: 100.0%;">Ziua 2 - Docas de Santo Amaro (Cină)</div>`)[0];
+            popup_11edec6ba797f5eede8cd1879a6ff73f.setContent(html_9c4435a9d4979ca9adeb44aabc42adb4);
+        
+
+        marker_881a23f18345957a679d92d954185678.bindPopup(popup_11edec6ba797f5eede8cd1879a6ff73f)
+        ;
+
+        
+    
+    
+            marker_881a23f18345957a679d92d954185678.bindTooltip(
+                `<div>
+                     Ziua 2 - Docas de Santo Amaro (Cină)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_580d0aeaf2175124efff5617916b0b74 = L.marker(
+                [38.7142, -9.1391],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_b78540d5b23781a7451181cd074bfd8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_580d0aeaf2175124efff5617916b0b74.setIcon(icon_b78540d5b23781a7451181cd074bfd8b);
+        
+    
+        var popup_7b0e1f9e1df48c42490950d876ca0c54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_265fadb283ee9876b2994850f065c064 = $(`<div id="html_265fadb283ee9876b2994850f065c064" style="width: 100.0%; height: 100.0%;">Ziua 3 - Gara Rossio (Tren spre Sintra)</div>`)[0];
+            popup_7b0e1f9e1df48c42490950d876ca0c54.setContent(html_265fadb283ee9876b2994850f065c064);
+        
+
+        marker_580d0aeaf2175124efff5617916b0b74.bindPopup(popup_7b0e1f9e1df48c42490950d876ca0c54)
+        ;
+
+        
+    
+    
+            marker_580d0aeaf2175124efff5617916b0b74.bindTooltip(
+                `<div>
+                     Ziua 3 - Gara Rossio (Tren spre Sintra)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_165b41e094d6edbace0466a182696a02 = L.marker(
+                [38.7876, -9.3904],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_92192ab9148fa335f21b230ce67d80c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_165b41e094d6edbace0466a182696a02.setIcon(icon_92192ab9148fa335f21b230ce67d80c0);
+        
+    
+        var popup_1b58f7b6578601157efde485dc9527db = L.popup({"maxWidth": "100%"});
+
+        
+            var html_56128e9cb7df7c125f60cc144757bef0 = $(`<div id="html_56128e9cb7df7c125f60cc144757bef0" style="width: 100.0%; height: 100.0%;">Ziua 3 - Palatul Pena</div>`)[0];
+            popup_1b58f7b6578601157efde485dc9527db.setContent(html_56128e9cb7df7c125f60cc144757bef0);
+        
+
+        marker_165b41e094d6edbace0466a182696a02.bindPopup(popup_1b58f7b6578601157efde485dc9527db)
+        ;
+
+        
+    
+    
+            marker_165b41e094d6edbace0466a182696a02.bindTooltip(
+                `<div>
+                     Ziua 3 - Palatul Pena
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fe4454c97ac710523c5924d997544fc8 = L.marker(
+                [38.7925, -9.3862],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_9ec0fad340f25c006a0eeaadca632615 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fe4454c97ac710523c5924d997544fc8.setIcon(icon_9ec0fad340f25c006a0eeaadca632615);
+        
+    
+        var popup_cdc888c1b465562977e59d475796ac75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_90adf0e11cf34f11f84b136290a46be8 = $(`<div id="html_90adf0e11cf34f11f84b136290a46be8" style="width: 100.0%; height: 100.0%;">Ziua 3 - Castelul Maurilor</div>`)[0];
+            popup_cdc888c1b465562977e59d475796ac75.setContent(html_90adf0e11cf34f11f84b136290a46be8);
+        
+
+        marker_fe4454c97ac710523c5924d997544fc8.bindPopup(popup_cdc888c1b465562977e59d475796ac75)
+        ;
+
+        
+    
+    
+            marker_fe4454c97ac710523c5924d997544fc8.bindTooltip(
+                `<div>
+                     Ziua 3 - Castelul Maurilor
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4aa437c50bc531d03e1bf04e7d7a6cba = L.marker(
+                [38.8001, -9.3856],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_3b127531f49fdb419dd9e334565c2339 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4aa437c50bc531d03e1bf04e7d7a6cba.setIcon(icon_3b127531f49fdb419dd9e334565c2339);
+        
+    
+        var popup_be6d7a63e7a0484462f1193e4d8738ac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0f55b25b740730e85aad269d93dc48c8 = $(`<div id="html_0f55b25b740730e85aad269d93dc48c8" style="width: 100.0%; height: 100.0%;">Ziua 3 - Cantinho Gourmet (Prânz)</div>`)[0];
+            popup_be6d7a63e7a0484462f1193e4d8738ac.setContent(html_0f55b25b740730e85aad269d93dc48c8);
+        
+
+        marker_4aa437c50bc531d03e1bf04e7d7a6cba.bindPopup(popup_be6d7a63e7a0484462f1193e4d8738ac)
+        ;
+
+        
+    
+    
+            marker_4aa437c50bc531d03e1bf04e7d7a6cba.bindTooltip(
+                `<div>
+                     Ziua 3 - Cantinho Gourmet (Prânz)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_89b02ff9e960b117f56e2b4f46fd90af = L.marker(
+                [38.7804, -9.4989],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_a50ecb159a102b4a76bc5184e11d22df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_89b02ff9e960b117f56e2b4f46fd90af.setIcon(icon_a50ecb159a102b4a76bc5184e11d22df);
+        
+    
+        var popup_7be66c1bfe8b19dd4ffb98914401cb35 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9ee542cef4fd518ad250710d3084bedd = $(`<div id="html_9ee542cef4fd518ad250710d3084bedd" style="width: 100.0%; height: 100.0%;">Ziua 3 - Cabo da Roca</div>`)[0];
+            popup_7be66c1bfe8b19dd4ffb98914401cb35.setContent(html_9ee542cef4fd518ad250710d3084bedd);
+        
+
+        marker_89b02ff9e960b117f56e2b4f46fd90af.bindPopup(popup_7be66c1bfe8b19dd4ffb98914401cb35)
+        ;
+
+        
+    
+    
+            marker_89b02ff9e960b117f56e2b4f46fd90af.bindTooltip(
+                `<div>
+                     Ziua 3 - Cabo da Roca
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cca6ed3e82c1988edfa249b86e544ba2 = L.marker(
+                [38.7314, -9.4723],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_1b0deddeaef60cc466d76ebb48c7f817 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cca6ed3e82c1988edfa249b86e544ba2.setIcon(icon_1b0deddeaef60cc466d76ebb48c7f817);
+        
+    
+        var popup_e7b3fc20a5b0793bc6020a8dd6792a76 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3eb21b5a42cc068b970250a98dda056d = $(`<div id="html_3eb21b5a42cc068b970250a98dda056d" style="width: 100.0%; height: 100.0%;">Ziua 3 - Plaja Guincho</div>`)[0];
+            popup_e7b3fc20a5b0793bc6020a8dd6792a76.setContent(html_3eb21b5a42cc068b970250a98dda056d);
+        
+
+        marker_cca6ed3e82c1988edfa249b86e544ba2.bindPopup(popup_e7b3fc20a5b0793bc6020a8dd6792a76)
+        ;
+
+        
+    
+    
+            marker_cca6ed3e82c1988edfa249b86e544ba2.bindTooltip(
+                `<div>
+                     Ziua 3 - Plaja Guincho
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c1026c64133f61f7a926ff11351013bb = L.marker(
+                [38.7162, -9.1412],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_887400e3b82c6ecfb168e69a1df6add3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1026c64133f61f7a926ff11351013bb.setIcon(icon_887400e3b82c6ecfb168e69a1df6add3);
+        
+    
+        var popup_123c265b60853bac1939462866c64f04 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fb98da24197dfaadbf9b24f6fe058c72 = $(`<div id="html_fb98da24197dfaadbf9b24f6fe058c72" style="width: 100.0%; height: 100.0%;">Ziua 3 - Solar dos Presuntos (Cină)</div>`)[0];
+            popup_123c265b60853bac1939462866c64f04.setContent(html_fb98da24197dfaadbf9b24f6fe058c72);
+        
+
+        marker_c1026c64133f61f7a926ff11351013bb.bindPopup(popup_123c265b60853bac1939462866c64f04)
+        ;
+
+        
+    
+    
+            marker_c1026c64133f61f7a926ff11351013bb.bindTooltip(
+                `<div>
+                     Ziua 3 - Solar dos Presuntos (Cină)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ec007989e845fd0b04567ee30892ee4 = L.marker(
+                [38.7636, -9.095],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_25269032b6b44b02d927680ee1d3d1de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_7ec007989e845fd0b04567ee30892ee4.setIcon(icon_25269032b6b44b02d927680ee1d3d1de);
+        
+    
+        var popup_1cb5a7ad7455057800efbe1831a70680 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_20e178c4fb5996df49a483a11720bda4 = $(`<div id="html_20e178c4fb5996df49a483a11720bda4" style="width: 100.0%; height: 100.0%;">Ziua 4 - Oceanariul din Lisabona</div>`)[0];
+            popup_1cb5a7ad7455057800efbe1831a70680.setContent(html_20e178c4fb5996df49a483a11720bda4);
+        
+
+        marker_7ec007989e845fd0b04567ee30892ee4.bindPopup(popup_1cb5a7ad7455057800efbe1831a70680)
+        ;
+
+        
+    
+    
+            marker_7ec007989e845fd0b04567ee30892ee4.bindTooltip(
+                `<div>
+                     Ziua 4 - Oceanariul din Lisabona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a5a0857914a4d70328fed65358b6c6c = L.marker(
+                [38.7076, -9.1485],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_6a7ae1df3a895dbea251fe5697c6c497 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_2a5a0857914a4d70328fed65358b6c6c.setIcon(icon_6a7ae1df3a895dbea251fe5697c6c497);
+        
+    
+        var popup_abbedffabc4f5514b1bfc10e19011aac = L.popup({"maxWidth": "100%"});
+
+        
+            var html_55470fdba190d7e9ea621ca3e9677f74 = $(`<div id="html_55470fdba190d7e9ea621ca3e9677f74" style="width: 100.0%; height: 100.0%;">Ziua 4 - Time Out Market (Prânz)</div>`)[0];
+            popup_abbedffabc4f5514b1bfc10e19011aac.setContent(html_55470fdba190d7e9ea621ca3e9677f74);
+        
+
+        marker_2a5a0857914a4d70328fed65358b6c6c.bindPopup(popup_abbedffabc4f5514b1bfc10e19011aac)
+        ;
+
+        
+    
+    
+            marker_2a5a0857914a4d70328fed65358b6c6c.bindTooltip(
+                `<div>
+                     Ziua 4 - Time Out Market (Prânz)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5eef6535645bf7d66a9fd483cef4129d = L.marker(
+                [38.7756, -9.1354],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_1850b57626991b3314bf38a2fc844d35 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_5eef6535645bf7d66a9fd483cef4129d.setIcon(icon_1850b57626991b3314bf38a2fc844d35);
+        
+    
+        var popup_98c6ec781e0a9fdbb6fee8efdf5d65af = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9727b642a65fcf5add5b3d34b8a4d826 = $(`<div id="html_9727b642a65fcf5add5b3d34b8a4d826" style="width: 100.0%; height: 100.0%;">Ziua 4 - Aeroport Lisabona</div>`)[0];
+            popup_98c6ec781e0a9fdbb6fee8efdf5d65af.setContent(html_9727b642a65fcf5add5b3d34b8a4d826);
+        
+
+        marker_5eef6535645bf7d66a9fd483cef4129d.bindPopup(popup_98c6ec781e0a9fdbb6fee8efdf5d65af)
+        ;
+
+        
+    
+    
+            marker_5eef6535645bf7d66a9fd483cef4129d.bindTooltip(
+                `<div>
+                     Ziua 4 - Aeroport Lisabona
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a145a0e892d629a70824fcead407cfcd = L.marker(
+                [38.7147, -9.1357],
+                {}
+            ).addTo(map_604ceb7ca5885fead10dba524d2c6741);
+        
+    
+            var icon_1e71e75cfc6afd15aec4df9871f1a155 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a145a0e892d629a70824fcead407cfcd.setIcon(icon_1e71e75cfc6afd15aec4df9871f1a155);
+        
+    
+        var popup_bfcee59de571af16307d1bd6f7651a96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_03b004c9b46956a61c48521670b1b93f = $(`<div id="html_03b004c9b46956a61c48521670b1b93f" style="width: 100.0%; height: 100.0%;">Hotel Mundial - Cazare</div>`)[0];
+            popup_bfcee59de571af16307d1bd6f7651a96.setContent(html_03b004c9b46956a61c48521670b1b93f);
+        
+
+        marker_a145a0e892d629a70824fcead407cfcd.bindPopup(popup_bfcee59de571af16307d1bd6f7651a96)
+        ;
+
+        
+    
+    
+            marker_a145a0e892d629a70824fcead407cfcd.bindTooltip(
+                `<div>
+                     Hotel Mundial
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
